@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+
+    <h1> Directorios existentes: </h1>
+
+    <ul>
+        <% for(var i=0; i<directories.length; i++) {%>
+            <li>
+                <%= directories[i] %>
+                    <a> Eliminar </a>
+            </li>
+            <% } %>
+    </ul>
+    <form class="" action="save" method="post">
+        <input type="text" name="name"><br> Nombre:<br>
+        <input type="text" name="nombre">
+
+        <input type="submit">
+    </form>
+
+    <audio controls autoplay>
+      <source src="http://localhost:3000/listen/greg" type="audio/mpeg">
+    </audio>
+</body>
+
+</html>
