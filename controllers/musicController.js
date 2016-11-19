@@ -1,3 +1,5 @@
+'use strict';
+
 const fs = require('fs');
 const path = require('path');
 
@@ -17,7 +19,6 @@ exports.getSong = function(req, res) {
         let song = items[index];
         var stream = fs.createReadStream(path + "/" + song);
         stream.pipe(res);
-
     });
 };
 
