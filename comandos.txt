@@ -1,0 +1,2 @@
+git add -A . && git commit -m'mensaje explicando el cambio'
+git push heroku master
